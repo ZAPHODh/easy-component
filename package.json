@@ -1,0 +1,24 @@
+{
+    "name": "easy-component",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && node ./dist/index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Luis Paulo Silva Martins",
+    "license": "MIT",
+    "bin": {
+        "easy-component": "dist/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^22.5.4",
+        "eslint": "^9.10.0",
+        "eslint-config-prettier": "^9.1.0",
+        "prettier": "^3.3.3",
+        "typescript": "^5.5.4"
+    }
+}
