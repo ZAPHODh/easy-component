@@ -1,8 +1,7 @@
 import path from 'path'
 import fs from 'fs'
-import { Config } from './types'
 
-const CONFIG_PATH = path.resolve(__dirname, 'snap-component.config.json')
+const CONFIG_PATH = path.resolve(__dirname, '../snap-component.config.json')
 
 let config: Config = {
     testWithStyledTheme: true,
