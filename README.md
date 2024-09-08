@@ -23,16 +23,14 @@ pnpm i -D snap-component
 Before using snap component, you must set up a `snap-component.config.json` file in the root of your project
 
 ```json
- {
+{
     "testWithStyledTheme": true,
-    "typeStrict": true, // for now, it must be true.
+    "typeStrict": true,
     "src": true,
-    "cssFramework": 'styled-components',
+    "cssFramework": "styled-components",
     "useJest": true,
-    "useStorybook": true,
+    "useStorybook": true
 }
-
-export default config
 ```
 
 ### Configuration
