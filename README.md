@@ -1,3 +1,7 @@
+# WARNING
+
+This package is under development and may have unresolved issues. Please be aware that it might not be fully stable yet.
+
 # Easy Component
 
 Easy component is a CLI tool to quicly create react's components with support to styles, storybook and tests. This package is thinked to your quaility of life while creating components
@@ -144,7 +148,3 @@ export const Wrapper = styled.div`
 ## Contribution
 
 If you would like to contribute to Easy Component, feel free to fork the repository and submit pull requests. All contributions are welcome
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
