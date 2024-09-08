@@ -1,6 +1,6 @@
 import path from 'path'
 import fs from 'fs'
-const CONFIG_PATH = path.resolve(__dirname, 'easy-component.config.ts')
+const CONFIG_PATH = path.resolve(__dirname, 'snap-component.config.ts')
 
 let config: Config = {
     testWithStyledTheme: true,

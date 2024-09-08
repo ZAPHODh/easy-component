@@ -2,25 +2,25 @@
 
 This package is under development and may have unresolved issues. Please be aware that it might not be fully stable yet.
 
-# Easy Component
+# Snap Component
 
-Easy component is a CLI tool to quicly create react's components with support to styles, storybook and tests. This package is thinked to your quaility of life while creating components
+Snap component is a CLI tool to quicly create react's components with support to styles, storybook and tests. This package is thinked to your quaility of life while creating components
 
 # Instalation
 
 ```bash
-npm i -D easy-component
+npm i -D snap-component
 ```
 
 or
 
 ```bash
-pnpm i -D easy-component
+pnpm i -D snap-component
 ```
 
 ## Requirments
 
-Before using Easy component, you must set up a `easy-component.config.ts` file in the root of your project
+Before using snap component, you must set up a `snap-component.config.ts` file in the root of your project
 
 ```typescript
 const config: Config = {
@@ -49,13 +49,13 @@ export default config
 Using npm
 
 ```bash
-npx easy-component ~componentName~
+npx snap-component ~componentName~
 ```
 
 Using pnpm
 
 ```bash
-pnpm easy-component  ~componentName~
+pnpm snap-component  ~componentName~
 ```
 
 ### Directory Structure Created
@@ -75,11 +75,11 @@ pnpm easy-component  ~componentName~
 
 import * as Styled from './styles'
 
-export type easy-componentProps = {
+export type SnapComponentProps = {
   name: string,
 }
 
-export const easy-component = ({ name }: easy-componentProps) => {
+export const SnapComponent = ({ name }: SnapComponentProps) => {
   return <Styled.Wrapper>{name}</Styled.Wrapper>
 }
 ```
@@ -89,11 +89,11 @@ export const easy-component = ({ name }: easy-componentProps) => {
 ```typescript
 
 import type { Meta, StoryObj } from '@storybook/react'
-import { easy-component } from '.'
+import { SnapComponent } from '.'
 
 const meta = {
-  title: 'Component/easy-component',
-  component: easy-component,
+  title: 'Component/SnapComponent',
+  component: SnapComponent,
   parameters: {
     layout: 'centered',
   },
@@ -104,7 +104,7 @@ const meta = {
       description: 'description',
     },
   },
-} satisfies Meta<typeof easy-component>
+} satisfies Meta<typeof snap-component>
 
 export default meta
 
@@ -121,11 +121,11 @@ export const Default: Story = {
 ```typescript
 
 import { render } from '@testing-library/react'
-import { easy-component } from '.'
+import { snapComponent } from '.'
 
-describe('easy-component', () => {
-  it('should render the easy-component', () => {
-    const { getByText } = render(<easy-component  name={'test'}/>)
+describe('snap-component', () => {
+  it('should render the snap-component', () => {
+    const { getByText } = render(<SnapComponent  name={'test'}/>)
 
     const component = getByText('test')
 
@@ -149,4 +149,4 @@ export const Wrapper = styled.div`
 
 ## Contribution
 
-If you would like to contribute to Easy Component, feel free to fork the repository and submit pull requests. All contributions are welcome
+If you would like to contribute to snap Component, feel free to fork the repository and submit pull requests. All contributions are welcome
