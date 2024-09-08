@@ -20,16 +20,16 @@ pnpm i -D snap-component
 
 ## Requirments
 
-Before using snap component, you must set up a `snap-component.config.ts` file in the root of your project
+Before using snap component, you must set up a `snap-component.config.json` file in the root of your project
 
-```typescript
-const config: Config = {
-    testWithStyledTheme: true,
-    typeStrict: true, // for now, it must be true.
-    src: true,
-    cssFramework: 'styled-components',
-    useJest: true,
-    useStorybook: true,
+```json
+ {
+    "testWithStyledTheme": true,
+    "typeStrict": true, // for now, it must be true.
+    "src": true,
+    "cssFramework": 'styled-components',
+    "useJest": true,
+    "useStorybook": true,
 }
 
 export default config
@@ -45,6 +45,12 @@ export default config
 -   useStorybook: Enables or disables the creation of Storybook files.
 
 ## Usage
+
+First of all, add the script to your package.json
+
+```json
+{ "easy-component": "easy-component" }
+```
 
 Using npm
 

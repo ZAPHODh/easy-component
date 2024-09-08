@@ -1,6 +1,8 @@
 import path from 'path'
 import fs from 'fs'
-const CONFIG_PATH = path.resolve(__dirname, 'snap-component.config.ts')
+import { Config } from './types'
+
+const CONFIG_PATH = path.resolve(__dirname, 'snap-component.config.json')
 
 let config: Config = {
     testWithStyledTheme: true,
@@ -12,6 +14,7 @@ let config: Config = {
 }
 
 if (fs.existsSync(CONFIG_PATH)) {
-    config = require(CONFIG_PATH).default
+    config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'))
 }
+
 export default config
