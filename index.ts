@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import config from './easy-component.config'
+import config from './snap-component.config'
 
 import fs from 'fs'
 import path from 'path'

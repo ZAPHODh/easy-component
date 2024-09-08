@@ -149,4 +149,8 @@ export const Wrapper = styled.div`
 
 ## Contribution
 
-If you would like to contribute to snap Component, feel free to fork the repository and submit pull requests. All contributions are welcome
+If you would like to contribute to Snap Component, feel free to fork the repository and submit pull requests. All contributions are welcome
+
+## LICENSE
+
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License. See the LICENSE file for details.

@@ -12,7 +12,7 @@
     "author": "Luis Paulo Silva Martins",
     "license": "MIT",
     "bin": {
-        "easy-component": "dist/index.js"
+        "snap-component": "dist/index.js"
     },
     "devDependencies": {
         "@types/node": "^22.5.4",
