@@ -24,6 +24,7 @@ Before using Easy component, you must set up a `easy-component.config.ts` file i
 
 ```typescript
 const config: Config = {
+    testWithStyledTheme: true,
     typeStrict: true, // for now, it must be true.
     src: true,
     cssFramework: 'styled-components',
@@ -36,6 +37,7 @@ export default config
 
 ### Configuration
 
+-   testWithStyledTheme: Imports the ThemeClient file in the testing file for theming with styled-components.
 -   typeStrict: Defines whether TypeScript should be strict.
 -   src: Indicates if the source code should be placed inside the src directory.
 -   cssFramework: Choose the CSS framework (e.g., styled-components).

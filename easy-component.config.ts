@@ -3,6 +3,7 @@ import fs from 'fs'
 const CONFIG_PATH = path.resolve(__dirname, 'easy-component.config.ts')
 
 let config: Config = {
+    testWithStyledTheme: true,
     typeStrict: true,
     src: true,
     cssFramework: 'styled-components',

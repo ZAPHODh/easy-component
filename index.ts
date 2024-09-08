@@ -31,6 +31,11 @@ fs.mkdirSync(componentDir, { recursive: true })
 createComponent(componentName, config.cssFramework, componentDir)
 createStory(componentName, componentDir, config.useStorybook)
 createStyle(componentDir, config.cssFramework)
-createTest(componentName, componentDir, config.useJest)
+createTest(
+    componentName,
+    componentDir,
+    config.useJest,
+    config.testWithStyledTheme ? true : false
+)
 
 console.log(`Component ${componentName} created succefully!`)
