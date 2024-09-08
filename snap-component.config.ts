@@ -1,7 +1,7 @@
 import path from 'path'
 import fs from 'fs'
 
-const CONFIG_PATH = path.resolve(__dirname, '../snap-component.config.json')
+const CONFIG_PATH = path.resolve(process.cwd(), 'snap-component.config.json')
 
 let config: Config = {
     testWithStyledTheme: true,
@@ -12,8 +12,15 @@ let config: Config = {
     useStorybook: true,
 }
 
-if (fs.existsSync(CONFIG_PATH)) {
-    config = JSON.parse(fs.readFileSync(CONFIG_PATH, 'utf-8'))
+try {
+    if (fs.existsSync(CONFIG_PATH)) {
+        const configFileContent = fs.readFileSync(CONFIG_PATH, 'utf-8')
+        config = JSON.parse(configFileContent)
+    }
+} catch {
+    console.error(
+        `Error reading or parsing config file at ${CONFIG_PATH}:loading default configuration`
+    )
 }
 
 export default config
