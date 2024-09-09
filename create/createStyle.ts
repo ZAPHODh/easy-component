@@ -12,7 +12,7 @@ export const createStyle = (componentDir: any, params: CssFramework) => {
         )
 
     return fs.writeFileSync(
-        path.join(componentDir, 'styles.ts'),
+        path.join(componentDir, 'styles.css'),
         stylesCssContent
     )
 }
