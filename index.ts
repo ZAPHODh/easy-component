@@ -1,14 +1,13 @@
 #!/usr/bin/env node
 
-import config from './snap-component.config'
-
 import fs from 'fs'
 import path from 'path'
 import { createComponent } from './create/createComponent'
 import { createStory } from './create/createStory'
 import { createStyle } from './create/createStyle'
 import { createTest } from './create/createTest'
-
+import { loadConfig } from './snap-component.config'
+const config = loadConfig()
 const componentName = process.argv[2]
 const componentDir = path.join(
     process.cwd(),
@@ -26,6 +25,7 @@ if (fs.existsSync(componentDir)) {
     console.log(`the component ${componentName} already exists`)
     process.exit(1)
 }
+
 fs.mkdirSync(componentDir, { recursive: true })
 
 createComponent(componentName, config.cssFramework, componentDir)
