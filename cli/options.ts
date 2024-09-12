@@ -3,7 +3,7 @@ import { generateComponent } from './actions'
 
 export function setupOptions(program: Command) {
     program
-        .command('snap-component <component>')
+        .command('<component>')
         .description('create the component')
         .action(generateComponent)
 }
