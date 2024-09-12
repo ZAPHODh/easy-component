@@ -1,4 +1,4 @@
-export const storyContent = (
+const storyContent = (
     componentName: string
 ): string => `import type { Meta, StoryObj } from '@storybook/react'
 import { ${componentName} } from '.'
@@ -26,3 +26,4 @@ export const Default: Story = {
   args: { name: 'preset-story' },
 }
 `
+export default storyContent

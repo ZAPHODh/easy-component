@@ -1,4 +1,4 @@
-export const stylesWithStyledComponentContent = `'use client'
+const style = `'use client'
 
 import styled, { css } from 'styled-components'
 
@@ -6,3 +6,4 @@ export const Wrapper = styled.div\`
   \${({ theme }) => css\`\`}
 \`
 `
+export default style

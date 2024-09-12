@@ -1,4 +1,4 @@
-export const componentContent = (componentName: string): string => `'use client'
+const componentContent = (componentName: string): string => `'use client'
 
 import * as Styled from './styles'
 
@@ -7,5 +7,6 @@ export type ${componentName}Props = {
 }
 
 export const ${componentName} = ({ name }: ${componentName}Props) => {
-  return <div className='wrapper'>{name}</div>
+  return <Styled.Wrapper>{name}</Styled.Wrapper>
 }`
+export default componentContent

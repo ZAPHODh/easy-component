@@ -1,10 +1,10 @@
-type CssFramework = 'styled-components' | 'CSS'
-
+type CssFramework = 'styled-components' | 'css' | 'tailwind'
+type Language = 'ts' | 'js'
+type Test = 'jest'
 interface Config {
-    testWithStyledTheme: boolean
-    typeStrict: boolean
-    src: boolean
+    language: Language
+    outputDir: string
     cssFramework: CssFramework
-    useJest: boolean
+    test?: Test
     useStorybook: boolean
 }

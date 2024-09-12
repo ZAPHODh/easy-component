@@ -4,11 +4,10 @@ export const loadConfig = (): Config => {
     const CONFIG_PATH = findUp('snap-component.config.json')
 
     let config: Config = {
-        testWithStyledTheme: false,
-        typeStrict: true,
-        src: true,
+        language: 'ts',
+        outputDir: 'src/components',
         cssFramework: 'styled-components',
-        useJest: true,
+        test: 'jest',
         useStorybook: true,
     }
 

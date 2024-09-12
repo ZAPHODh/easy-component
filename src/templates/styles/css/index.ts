@@ -1,3 +1,3 @@
 export const stylesCssContent = `.wrapper {
-  /* Add your styles here */
-}`
+    /* Add your styles here */
+  }`

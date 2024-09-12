@@ -18,7 +18,7 @@ or
 pnpm i -D snap-component
 ```
 
-## Requirments
+## Requeriments
 
 Before using snap component, you must set up a `snap-component.config.json` file in the root of your project
 

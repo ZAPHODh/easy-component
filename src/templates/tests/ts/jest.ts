@@ -1,4 +1,4 @@
-export const testContent = (
+const testContent = (
     componentName: string
 ): string => `import { render } from '@testing-library/react'
 import { ${componentName} } from '.'
@@ -13,3 +13,4 @@ describe('${componentName}', () => {
   })
 })
 `
+export default testContent
