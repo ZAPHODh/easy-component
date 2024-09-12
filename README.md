@@ -149,6 +149,24 @@ export const Wrapper = styled.div`
 `
 ```
 
+## Especific Component
+
+| Component Name | Language (TS/JS) | Test      | CSS Framework (CSS/Styled-components) | Storybook |
+| -------------- | ---------------- | --------- | ------------------------------------- | --------- |
+| heading        | both             | only Jest | Styled-components                     | Yes       |
+
+run
+
+```bash
+pnpm snap-component heading
+```
+
+This command will generate a well-designed heading with:
+
+Tests: Comprehensive Jest tests.
+Styles: Styled-components for consistent and modular styling.
+Props: Specific props tailored for this component.
+
 ## Contribution
 
 If you would like to contribute to Snap Component, feel free to fork the repository and submit pull requests. All contributions are welcome
