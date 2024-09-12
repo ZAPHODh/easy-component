@@ -3,6 +3,9 @@
     "version": "1.0.7",
     "description": "CLI tool designed to streamline the creation of React components with full support for TypeScript, styled-components, Storybook, and Jest. It automates the setup of component files, including the component logic, styles, tests, and stories, allowing developers to focus on building features rather than boilerplate.",
     "main": "index.js",
+    "publishConfig": {
+        "tag": "dev"
+    },
     "scripts": {
         "prebuild": "ts-node ./utils/generateComponentsArray.ts",
         "prepublish": "pnpm run build",

@@ -4,11 +4,11 @@ import { createComponentFiles } from './createComponentFile'
 export const createEspecificComponent = async (component: string) => {
     const { cssFramework, useStorybook, language, test, outputDir } =
         loadConfig()
-    const componentPath = `../src/templates/common/${component.toLowerCase()}/components/${language}/${cssFramework}`
+    const componentPath = `../src/templates/common/${component.toLowerCase()}/components/${cssFramework}/${language}`
     const stylePath = `../src/templates/common/${component.toLowerCase()}/styles/${cssFramework}/${language}`
-    const testPath = `../src/templates/common/${component.toLowerCase()}/tests/${language}/${test}`
+    const testPath = `../src/templates/common/${component.toLowerCase()}/tests/${test}/${language}`
     const storyPath = useStorybook
-        ? `../src/templates/common/${component.toLowerCase()}/components/stories/${language}`
+        ? `../src/templates/common/${component.toLowerCase()}/stories/${language}`
         : undefined
 
     await createComponentFiles(component, {

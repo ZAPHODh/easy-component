@@ -30,24 +30,29 @@ export const createComponentFiles = async (
         const Test = await importDefault(testPath)
         const Story = storyPath ? await importDefault(storyPath) : null
 
+        const componentContent =
+            typeof Component === 'string' ? Component : Component(component)
         fs.writeFileSync(
             path.join(outDir, `index.${language}x`),
-            Component(component)
+            componentContent
         )
 
         const styleContent =
             typeof Style === 'string' ? Style : Style(component)
         fs.writeFileSync(path.join(outDir, `styles.${language}x`), styleContent)
 
+        const testContent = typeof Test === 'string' ? Test : Test(component)
         fs.writeFileSync(
             path.join(outDir, `index.test.${language}x`),
-            Test(component)
+            testContent
         )
 
+        const storyContent =
+            typeof Story === 'string' ? Story : Story(component)
         if (useStorybook && Story) {
             fs.writeFileSync(
                 path.join(outDir, `index.stories.${language}x`),
-                Story(component)
+                storyContent
             )
         }
 

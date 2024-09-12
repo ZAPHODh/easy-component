@@ -24,22 +24,20 @@ Before using snap component, you must set up a `snap-component.config.json` file
 
 ```json
 {
-    "testWithStyledTheme": true,
-    "typeStrict": true,
-    "src": true,
+    "language": "ts",
+    "outputDir": "src/components",
     "cssFramework": "styled-components",
-    "useJest": true,
+    "test": "jest",
     "useStorybook": true
 }
 ```
 
 ### Configuration
 
--   testWithStyledTheme: Imports the ThemeClient file in the testing file for theming with styled-components.
--   typeStrict: Defines whether TypeScript should be strict.
--   src: Indicates if the source code should be placed inside the src directory.
--   cssFramework: Choose the CSS framework (e.g., styled-components).
--   useJest: Enables or disables the use of Jest for unit testing.
+-   language: Choose the language (e.g,'ts','js').
+-   outputDir: Defines the directory where the component's generated source code and associated files will be placed after creation.(default :src/components)
+-   cssFramework: Choose the CSS framework (e.g., styled-components,css).
+-   test: framework for test. for now, only jest is availible
 -   useStorybook: Enables or disables the creation of Storybook files.
 
 ## Usage
@@ -53,7 +51,7 @@ First of all, add the script to your package.json
 Using npm
 
 ```bash
-npx snap-component ~componentName~
+npm run snap-component ~componentName~
 ```
 
 Using pnpm
@@ -70,7 +68,7 @@ pnpm snap-component  ~componentName~
     -   `styles.ts` - Styles file.
     -   `index.test.tsx` - Unit tests file.
 
-### Output Files Created
+### Output Generic Files Created
 
 #### React Component
 
