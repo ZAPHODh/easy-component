@@ -8,3 +8,12 @@ interface Config {
     test?: Test
     useStorybook: boolean
 }
+interface ComponentConfig {
+    componentPath: string
+    stylePath: string
+    testPath: string
+    storyPath?: string
+    outputDir: string
+    useStorybook: boolean
+    language: Language
+}
