@@ -7,9 +7,6 @@
         "type": "git",
         "url": "https://github.com/ZAPHODh/snap-component"
     },
-    "publishConfig": {
-        "tag": "dev"
-    },
     "scripts": {
         "prebuild": "ts-node ./utils/generateComponentsArray.ts",
         "prepublish": "pnpm run build",
