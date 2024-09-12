@@ -45,7 +45,7 @@ Before using snap component, you must set up a `snap-component.config.json` file
 First of all, add the script to your package.json
 
 ```json
-{ "easy-component": "easy-component" }
+{ "snap-component": "snap-component" }
 ```
 
 Using npm
