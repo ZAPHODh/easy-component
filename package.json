@@ -20,12 +20,6 @@
         "component",
         "component-generator",
         "automation",
-        "typescript",
-        "styled-components",
-        "storybook",
-        "jest",
-        "css",
-        "nextjs",
         "react-component"
     ],
     "author": "Luis Paulo Silva Martins",
