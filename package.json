@@ -1,6 +1,6 @@
 {
     "name": "snap-component",
-    "version": "2.0.7",
+    "version": "2.0.8",
     "description": "CLI tool designed to streamline the creation of React components with full support for TypeScript, styled-components, Storybook, and Jest. It automates the setup of component files, including the component logic, styles, tests, and stories, allowing developers to focus on building features rather than boilerplate.",
     "main": "index.js",
     "repository": {
