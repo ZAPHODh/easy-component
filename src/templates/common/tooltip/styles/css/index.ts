@@ -3,7 +3,6 @@ const cssComponent = `/* Estilos para Wrapper */
     position: relative;
 }
 
-/* Estilos para Tooltip */
 .tooltip {
     background-color: #333;
     color: #fff;
@@ -15,7 +14,6 @@ const cssComponent = `/* Estilos para Wrapper */
     transition: opacity 0.2s ease-in-out;
 }
 
-/* Posições específicas para o Tooltip */
 .tooltip.top {
     top: -10px;
     left: 50%;
@@ -40,3 +38,4 @@ const cssComponent = `/* Estilos para Wrapper */
     transform: translateY(-50%);
 }
 `
+export default cssComponent

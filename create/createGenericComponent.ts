@@ -11,7 +11,7 @@ export const createGenericComponent = async (component: string) => {
         ? `../src/templates/stories/${language}`
         : undefined
 
-    await createComponentFiles(component, {
+    await createComponentFiles(false, component, {
         componentPath,
         stylePath,
         testPath,

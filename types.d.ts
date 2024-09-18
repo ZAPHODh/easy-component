@@ -9,6 +9,7 @@ interface Config {
     useStorybook: boolean
 }
 interface ComponentConfig {
+    utilsPath?: string
     componentPath: string
     stylePath: string
     testPath: string

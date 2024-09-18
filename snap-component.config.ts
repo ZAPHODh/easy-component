@@ -6,7 +6,7 @@ export const loadConfig = (): Config => {
     let config: Config = {
         language: 'ts',
         outputDir: 'src/components',
-        cssFramework: 'styled-components',
+        cssFramework: 'css',
         test: 'jest',
         useStorybook: true,
     }

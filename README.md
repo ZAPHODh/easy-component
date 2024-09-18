@@ -45,7 +45,7 @@ Before using snap component, you must set up a `snap-component.config.json` file
 First of all, add the script to your package.json
 
 ```json
-{ "snap-component": "snap-component" }
+{ "snap-component": "snap-component snap-component" }
 ```
 
 Using npm
@@ -151,21 +151,22 @@ export const Wrapper = styled.div`
 
 ## Especific Component
 
-| Component Name | Language (TS/JS) | Test      | CSS Framework (CSS/Styled-components) | Storybook |
-| -------------- | ---------------- | --------- | ------------------------------------- | --------- |
-| heading        | both             | only Jest | Styled-components                     | Yes       |
-
-run
-
-```bash
-pnpm snap-component heading
-```
-
 This command will generate a well-designed heading with:
 
 Tests: Comprehensive Jest tests.
 Styles: Styled-components for consistent and modular styling.
 Props: Specific props tailored for this component.
+
+| Component Name | Language (TS/JS) | Test      | CSS Framework (CSS/Styled-components) | Storybook |
+| -------------- | ---------------- | --------- | ------------------------------------- | --------- |
+| heading        | both             | only Jest | Styled-components                     | Yes       |
+| tooltip        | both             | only Jest | both                                  | Yes       |
+
+example
+
+```bash
+pnpm snap-component <one of the component name listed above>
+```
 
 ## Contribution
 
